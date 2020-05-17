@@ -1,0 +1,15 @@
+
+#node {
+    width: 22px;
+    height: 22px;
+    border: 1px solid #777;
+    display: inline-block;
+}
+
+.start-node {
+    background-color: crimson !important;
+}
+
+.finish-node {
+    background-color: darkblue !important;
+}
