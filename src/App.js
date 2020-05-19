@@ -1,6 +1,6 @@
 import React from 'react';
 
-import PathFinder from './path-finder/path_finding';
+import PathFinder from './path-finder/pathFinder';
 
 function App() {
 
