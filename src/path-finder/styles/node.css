@@ -1,5 +1,9 @@
 
-#node {
+.node, 
+.start-node, 
+.finish-node,
+.wall,
+.visited {
     width: 22px;
     height: 22px;
     border: 1px solid #777;
@@ -12,4 +16,12 @@
 
 .finish-node {
     background-color: darkblue !important;
+}
+
+.wall {
+    background-color: gold !important;
+}
+
+.visited {
+    background-color: springgreen !important;
 }

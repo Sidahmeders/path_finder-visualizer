@@ -2,20 +2,26 @@ import React from 'react';
 import './styles/node.css';
 
 
-function Node({id, startNode, finishNode, setBackgrounColor}) {
+function Node({ props }) {
 
-    return(
-        <div 
-          id={id} 
-          className={startNode || finishNode || "none"}
+  const {
+    setBackgrounColor, startNode, finishNode, row, 
+    column, isVisited, isWall, distance, previousNode
+  } = props;
+
+    return (
+        <div
+          id={`${row}-${column}`}
+          className={ isWall || isVisited || startNode || finishNode || `node`}
           onClick={setBackgrounColor}
+          distance={distance}
+          previousnode={previousNode}
         >
         </div>
     );
 };
 
 export default Node;
-
 
 
 //! bad algorithm
